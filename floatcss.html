@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+      <title>Css floating</title>
+      <style>
+        *{
+          box-sizing: border-box;
+        }
+.clearfix::after{
+  clear: both;
+  display: table;
+  content: "";
+}
+.img-container{
+  float: left;
+  width:33.3%;
+  padding: 05px;
+  height: 300px;
+}
+      </style>
+    </head>
+    <body>
+        <h2>Image floating side by side</h2>
+        <div class="clearfix">
+          <div class="img-container">
+          <img src="Natureimg1.jpg" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="Natureimg2.jpg" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="Natureimg3.jpg" style="width: 100%;">
+        </div>
+      </div>
+        
+    </body>
+</hmtl>

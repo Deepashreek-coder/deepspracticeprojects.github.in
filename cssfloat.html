@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Side by side Docs</title>
+        <style>
+            *{   
+                box-sizing:border-box;
+            }
+            .box{
+                background-color: #aaa;
+                float: left;
+                width: 20%;
+              /* padding:40px*/
+            }
+             .clearfix::after{
+                 content:'';
+                 display:table;
+                 clear: both;
+             } 
+            
+        </style>
+    </head>
+    <body>
+        <h2>Grid of boxes</h2>
+        <div class="clearfix">
+        <div class="box" style="background-color:#bbb" >
+        <p>Some text inside the box</p>
+        </div>
+        <div class="box"style="background-color:#aaa">
+        <p>Some text inside the box</p>
+        </div>
+        <div class="box" style="background-color:#ddd">
+        <p>Some text inside the box</p>
+        </div>
+        <div class="box"style="background-color:#eee">
+        <p>Some text inside the box</p>
+        </div>
+        <div class="box">
+        <p>Some text inside the box</p>
+        </div>
+        </div>
+    </body>
+
+</html>

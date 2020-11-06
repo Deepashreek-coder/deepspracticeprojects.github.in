@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Floating fo same</title>
+        <style>
+           /* *{
+                box-sizing: border-box;
+            }*/
+            .clearfix::after{
+               content: ""; 
+               clear: both;
+               display: table;
+            }
+            .box{
+                width: 33.3%;
+                float: left;
+                padding: 5px;
+                height: 300px;
+            }
+            .flex-container{
+                display: flex;
+                background-color: cadetblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Floating with height</h2>
+ <div class="flex-container">
+
+        <div class="box" style="background-color: #eee;">
+        <h2>Box1</h2>
+            <p>Hello welcome to the world </p>
+        </div>
+        <div class="box" style="background-color: #bbb;"> 
+        <h2>Box2</h2>
+            <p>Hello welcome to the world this elemeent lies just beside the element2</p>
+        </div>
+        </div>
+    </body>
+  
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center{
+            margin: auto;
+            border: 04px solid #7ad327;
+            padding: 25px;
+            width: 60%;
+        }
+        .text{
+           /* margin: auto;*/
+            text-align: center;
+            border: 04px solid #7ad327;
+            padding: 25px;/*
+            width: 60%;*/
+        }
+        
+        .image{
+            margin-left : auto;
+            margin-right: auto;
+            display: block;
+           /* padding: 25px;*/
+            width: 200px;
+            height: 200px;
+        }
+        .lnr{
+            position:absolute;/*One method of aligning the element using position:absolute*/
+            right: 0px;
+            padding: 20px;
+            width:250px;
+            border:04px solid #7ad327;
+        }
+        .float{
+            float: left;
+            right: 0px;
+            padding: 10px;
+            width:100px;
+            border:04px solid #7ad327;
+        }/*
+        div{
+            border: 2px solid #176579;
+            padding:30px;
+        }*/
+        .img1{
+            float:right;       
+/*            text-align: center;*/
+        }
+        img{
+            
+            width:150px;
+            height: 150px;
+        }
+         .clearfix{
+             overflow: auto;
+         }
+         .Vcenter{
+            /* padding-top: 40px;
+             padding-bottom:40px;*/
+             padding: 40px 0px;
+      
+             border: 2px solid green;
+         }
+         .VHcenter{
+             padding: 40px 0px;
+         
+             border: 2px solid green;
+             text-align: center;
+         }
+         .Incenter{
+             line-height: 200px;
+             border: 2px solid green;
+             text-align: center;
+         }
+         .linecenter{
+             line-height: 1.5;
+             border: 2px solid green;
+             text-align: center;
+         }
+         .transform p{
+            position: absolute;
+            margin: 0;
+            
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+/*            -ms-transform: translate(-50%, -50%);*/
+        }
+        .transform{
+            position: relative;
+            border:2px solid green;
+            height: 150px;
+        }
+        .Cent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <!--Center Align Elements-->
+    <h2>To Center align the element as  like div,use margin and auto</h2>
+    <p class="center"><b>Note:</b>Using Margin:auto will not work in IE8,unless !DOCTYPE declared</p>
+
+    <!--Center Align text-->
+    <h2>To Center align the element as  like div,use margin and auto</h2>
+    <p class="text"><b>Note:</b>Using Margin:auto will not work in IE8,unless !DOCTYPE declared</p>
+
+    <!--Center an Image-->
+    <!--
+    <h2>To Center align the element as image as center with margin and display as block</h2>
+    <p>To center an Image use margin left and right as "auto"</p>
+    <img src="Natureimg1.jpg" alt="Nature" class="image">-->
+
+    <!--Left and Right alignment-->
+    <h2>To Center align the element use position:absolute</h2>
+    <p class="lnr"><b>Note:</b>Using Margin:auto will not work in IE8,unless !DOCTYPE declared</p>
+
+    <!--Left and right alignment using float-->
+    <h2>To Center align the element use float:rigth/left</h2>
+    <p class="float"><b>Note:</b>Using Margin:auto will not work in IE8,unless !DOCTYPE declared</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--The  clearfix hack-->
+    <h2>In this example, the image is taller the element containing it, and it is flaoted, this can be over come by using the "clearfix:overflow"</h2>
+   
+    <div class="clearfix">
+        <img class="img1" src="Natureimg2.jpg" alt="Nature Beauty">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+    </div>
+    <!--Center Vertically using Padding-->
+    <h2>There are many ways to center the element Vertically center in css,A simple method is to use top and bottom padding</h2>
+    <p class="Vcenter">The vertically centered</p>
+
+     <!--Center Vertically and Horizontally using Padding-->
+     <h2>There are many ways to center the element Vertically center in css,A simple method is to use top and bottom padding</h2>
+     <p class="VHcenter">The vertically and Horizontally centered</p>
+    
+     <!--Center Vertically - Using line-height-->
+     <h2>There are many ways to center the element Vertically center in css,A simple method is to use top and bottom padding</h2>
+     <p class="Incenter">The vertically and Horizontally centered</p>
+     <p class="linecenter">The vertically and Horizontally centered</p>
+
+     <!--Center Vertically - Using position and transform-->
+     <h2>There are many ways to center the element Vertically center in css,A simple method is to use top and bottom padding</h2>
+     <div class="transform">
+         <p>The vertically and Horizontally centered  </p>           
+         </div>
+
+    <!--Fleaxbox Centreing-->
+    <p>>A container with both the justify-content and the align-items properties set to <em>center</em> will align the item(s) in the center (in both axis).</p>
+         <div class="Cent">
+             <p>The element is Vertically and Horizontally centered</p>
+         </div>
+
+</body>
+</html>
