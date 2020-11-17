@@ -1,0 +1,136 @@
+#container{
+    width: 1050px;
+    border:1px solid gray;
+    height: 100px;
+    margin: 0 auto;
+}
+#menu{
+    height: 70px;
+    background:linear-gradient(rgb(243, 210, 104),rgb(241, 198, 55));
+    padding-top: 20px;
+}
+#menu ul li{
+float: left;
+padding: 0px 10px;
+height: 20px;
+border-right: 1px solid rebeccapurple ;
+}
+#menu ul li:last-child{
+border-right: none;
+}
+ul{
+    list-style: none;
+}
+#menu ul li a{
+float: left;
+text-transform: uppercase;
+text-decoration:none;
+padding: 0px 30px;
+font-weight:10px;
+color: rebeccapurple;
+transition: font-size 1s ease;
+}
+#menu ul li a:hover,#menu ul li a.active{
+font-size: 20px;
+font-weight: bold;
+color: rgb(91, 12, 170);
+}
+#introduction{
+    font-size: 15px;
+    background: linear-gradient(rgb(195, 248, 126),rgb(147, 228, 72));
+    color:rgb(4, 80, 4);
+    padding: 10px 0px;
+    margin-top: 10px;
+   
+}
+#introduction h2{
+    font-weight: normal;
+}
+.p{
+    color:rgb(86, 160, 86);
+}
+.text{
+    float: left;
+    padding: 10px;
+    width: 200px;
+    color: rgb(236, 178, 69);
+    height: 10px;
+    background: white url(search.png) no-repeat right;
+    border:2px solid rgb(197, 158, 30);
+}
+.submit{
+    float: right;
+    color: white;
+    width:120px;
+    background:rgb(145, 81, 145);
+    font-weight: bold;
+    padding:5px;
+    font-size:15px;
+    border: none;
+}
+#brand{
+    float: left;
+    border: none;
+}
+h1 a{
+    font-size:50px;
+    font-weight: 100;
+    color: rgb(170, 66, 170);
+    text-decoration: none;
+    margin: none;
+}
+#searchbox{
+    float: right;
+    background:linear-gradient( rgb(171, 202, 121),rgba(142, 226, 32, 0.336));
+    width:400px;
+    height:50px;
+    padding: 20px 20px 0px 20px;
+    margin-top: 15px;
+
+}
+#clear{
+    clear: both;
+ }
+ .sidebar h3{
+ font-size: 30px;
+ color:rgb(129, 31, 129);
+}
+  .sidebar ul li a{
+text-decoration: none;
+font-size: 20px;
+  }
+  .sidebar ul li a:hover,.sidebar ul li a:active{
+  color: rgb(91, 12, 170);
+  text-decoration: none;
+ font-size: 20px;
+ font-weight: bold;
+ transition: font-size 0.5s ease;
+  }
+ .sidebar{
+     border: 1px solid rgb(212, 209, 209);
+     height:600px;
+     width: 500px;
+     border-radius: 25px;
+     margin-top: 20px;
+     font-size: 35px;
+     }
+#leftside ul li{
+    list-style-image:url(right.png);
+}
+ #leftside{
+float: left;
+color:rgb(9, 9, 87);    
+
+ }
+ #rightside ul li{
+    list-style-image:url(rightmark.png);
+}
+ #rightside {
+float:right;
+color:rgb(9, 9, 87);
+ }
+ .footer{
+     background-image: linear-gradient(rgba(245, 245, 82, 0.897),rgb(214, 186, 23));
+     height:60px;
+     padding: 10px 20px;
+ }
